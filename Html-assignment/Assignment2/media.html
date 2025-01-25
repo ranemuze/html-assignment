@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using Media Elements</title>
+    <link rel="stylesheet" href="media.css">
+  </head>
+  <body>
+    <header>   
+      <nav>
+         <div class="left">
+           <a>Rane Muze</a>
+       </div>
+       <div class="right">
+        <a href="/Html-assignment/index.html">Home</a>
+          <a href="/Html-assignment/Assignment1/bio.html">Bio</a>
+          <a href="/Html-assignment/Assignment1/form.html">Form</a>
+          <a href="/Html-assignment/Assignment2/table.html">Altschool Courses</a>
+          <a href="/Html-assignment/Assignment2/media.html">Media</a>
+  
+      </div>
+       </nav>
+     </header>
+     <main>
+    <!-- Title -->
+    <h1>Media Elements.</h1>
+    <p>Today I am experimenting with media elements.</p>
+
+    <!-- Responsive Picture Element -->
+    <h3>This is a picture tag</h3>
+    <picture>
+      <source srcset="sunset.jpg" media="(max-width: 600px)" />
+      <source srcset="sunset.jpg" media="(max-width: 1024px)" />
+      <source srcset="sunset.jpg" media="(max-width: 1200px)" />
+      <img
+        src="sunset.jpg"
+        alt="A picture I took of the sunset"
+        style="width: 100%; max-width: 800px"
+      />
+     
+    </picture>
+
+    <!-- Video Element -->
+    <h3>This is a Video Tag</h3>
+    <video
+      controls
+      autoplay
+      loop
+      muted
+      preload
+      crossorigin="anonymous"
+      style="width: 100%; max-width: 800px"
+    >
+      <source src="0109.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+   
+
+    <!-- Audio Element -->
+    <h3>This is an audio tag</h3>
+    <p>When I actually finish this program and it doesn't kill me first:</p>
+    <audio controls loop muted preload="auto">
+      <source src="audio.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+  </main>
+  </body>
+</html>

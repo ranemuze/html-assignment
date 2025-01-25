@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alt School Form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <!--  Navigation -->
+    <header>
+      <nav>
+        <div class="left">
+          <a>Rane Muze</a>
+        </div>
+        <div class="right">
+          <a href="/Html-assignment/index.html">Home</a>
+          <a href="/Html-assignment/Assignment1/bio.html">Bio</a>
+          <a href="/Html-assignment/Assignment1/form.html">Form</a>
+          <a href="/Html-assignment/Assignment2/table.html"
+            >Altschool Courses</a
+          >
+          <a href="/Html-assignment/Assignment2/media.html">Media</a>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- Main  -->
+    <main>
+      <h1>Signup</h1>
+      <p>Take the next steps to apply at AltSchool Africa</p>
+
+      <form action="#" method="post">
+        <!-- Personal Information -->
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="first-name">First Name:</label>
+          <input
+            type="text"
+            id="first-name"
+            name="first_name"
+            required
+          /><br /><br />
+
+          <label for="last-name">Last Name:</label>
+          <input
+            type="text"
+            id="last-name"
+            name="last_name"
+            required
+          /><br /><br />
+
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="" disabled selected>Select gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option></select
+          ><br /><br />
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required /><br /><br />
+        </fieldset>
+
+        <!-- Contact Information -->
+        <fieldset>
+          <legend>Contact Information</legend>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required /><br /><br />
+
+          <label for="country">Country:</label>
+          <select id="country" name="country" required>
+            <option value="" disabled selected>Select your country</option>
+            <option value="nigeria">Nigeria</option>
+            <option value="ghana">Ghana</option>
+            <option value="kenya">Kenya</option>
+            <option value="United Kingdon">United Kingdom</option>
+            <option value="other">Other</option></select
+          ><br /><br />
+
+          <label for="state-city">State/City of Residence:</label>
+          <input
+            type="text"
+            id="state-city"
+            name="state_city"
+            required
+          /><br /><br />
+        </fieldset>
+
+        <!-- Referral Information -->
+        <fieldset>
+          <legend>Referral Information</legend>
+          <label for="referral">How did you hear about us?</label>
+          <select id="referral" name="referral" required>
+            <option value="" disabled selected>Select channel</option>
+            <option value="social_media">Social Media</option>
+            <option value="friend">Friend</option>
+            <option value="Billboard">Billboard</option>
+            <option value="Sales_Officer">Sales Officer</option>
+            <option value="other">Other</option></select
+          ><br /><br />
+        </fieldset>
+
+        <!-- Account Security -->
+        <fieldset>
+          <legend>Account Security</legend>
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+          /><br /><br />
+
+          <label for="confirm-password">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm_password"
+            required
+          /><br /><br />
+        </fieldset>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Rane Muze. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

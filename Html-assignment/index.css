@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  a{
+    text-decoration: none;
+    font-family:  sans-serif;
+  }
+  nav {
+    background-color: #72baeb;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 70px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #72baeb;
+    backdrop-filter: blur(5px);
+  }
+  nav .left a {
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  nav .right a {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 10px;
+  }
+  
+  nav .right a:hover {
+    color: white;
+    transition: color 0.3s ease-in-out;
+  }
+  

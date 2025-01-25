@@ -1,0 +1,118 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family:sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+nav {
+  background-color: #72baeb;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  height: 70px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #72baeb;
+  backdrop-filter: blur(5px);
+}
+
+nav .left a {
+  color: black;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+nav .right a {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+nav .right a:hover {
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+section {
+  padding: 128px 32px;    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+section:nth-of-type(odd) {
+  background-color: #f8f8f8; 
+}
+
+section:nth-of-type(even) {
+  background-color: #ffffff; 
+}
+
+
+section h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.image{
+  width: 300px; 
+  height: auto; 
+}
+
+picture, img {
+  width: 100%; 
+  height: auto; 
+}
+
+#about-section .bio {
+  margin-bottom: 32px;
+  padding: 0 32px;
+  max-width: 990px;
+}
+
+#about-section .bio p {
+  font-size: 21px;
+  font-weight: 300;
+}
+#why-altschool p {
+  font-size: 21px;
+  font-weight: 300;
+}
+
+#my-goals p {
+  font-size: 21px;
+  font-weight: 300;
+}
+
+
+footer {
+  background-color: #909090;
+  color: #fff;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 15px;
+}
